@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Form Exercise</title>
+</head>
+<body>
+	<h1>Register</h1>
+
+	<form>
+		<div>
+			<label for="firstname">First Name: </label>
+			<input id="firstname" type="text" name="FirstName" placeholder="John" required />	
+			<label for="lastname">Last Name: </label>
+			<input id="lasename" type="text" name="LastName" placeholder="Smith" required />	
+		</div>
+		
+		<div>
+			<label for="gender-male">Male </label>
+			<input id="gender-male" type="radio" name="gender" value="male"/ >
+			<label for="gender-female">Female </label>
+			<input id="gender-female" type="radio" name="gender" value="female" />
+			<label for="gender-other">Other </label>
+			<input id="gender-other" type="radio" name="gender" value="other" />
+		</div>
+
+		<div>
+			<label for="email">Email: </label>
+			<input id="email" type="email" name="Email" placeholder="your email" required />	
+			<label for="password">Password: </label>
+			<input id="password" type="password" name="pass" pattern=".{5,10}" required title="5 to 10 characters">	
+		</div>
+			
+		<div>
+			<label for="birthday">Birthday: </label>
+			<select name="month">
+				<option>April</option>
+				<option>November</option>
+			</select>
+			<select name="day">
+				<option>18</option>
+				<option>10</option>
+			</select>
+			<select year="year">
+				<option>1995</option>
+				<option>1996</option>
+			</select>
+		</div>
+
+		<div>
+				<label for="agreement">I agree to terms and conditions</label>
+				<input id="agreement" type="checkbox" name="Agreement" value="agree" />
+		</div>
+
+		<div>
+			<input type="submit" value="Submit" />	
+		</div>
+		
+	</form>
+	
+
+</body>
+</html>
